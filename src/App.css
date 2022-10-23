@@ -1,38 +1,88 @@
-.App {
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+body * {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.inner-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-wrap {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-wrap {
+  max-width: 600px;
+  margin: 0 auto 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tudu-item .content {
+  font-weight: bold;
+  color: #3b3b3b;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 0;
+}
+
+.tudu-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tudu-wrap {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-tudu {
+  background-color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form {
+  margin-bottom: 20px;
+}
+
+TextField{
+  min-width: 400px;
+}
+@media screen and (max-width:425px) {
+  .btn-wrap {
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-wrap{
+    max-width: 380px;
+  }
+
+  .detail-wrap {
+    flex-direction: column;
   }
 }
